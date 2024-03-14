@@ -1,0 +1,21 @@
+{
+    "name": "landpulse",
+    "version": 2,
+    "builds": [
+      {
+        "src": "next.config.js",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "MONGODB_URI": "mongodb+srv://landpulsedemo:landpulse1234@landpulse.lpqldip.mongodb.net/?retryWrites=true&w=majority&appName=LandPulse",
+      "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyBG6KoxmUgD7mBtkK4iVljJ-R8M8CB6YvA"
+    }
+  }
+  
